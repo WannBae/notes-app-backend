@@ -6,9 +6,9 @@ const { mapDBToModel } = require("../../utils");
 const AuthorizationError = require("../../exceptions/AuthorizationError");
 
 class NotesService {
-  constructor(collaborationService) {
+  constructor(collaborationsService) {
     this._pool = new Pool();
-    this._collaborationService = collaborationService;
+    this._collaborationsService = collaborationsService;
   }
 
   async addNote({ title, body, tags, owner }) {
@@ -109,7 +109,7 @@ class NotesService {
         throw error;
       }
       try {
-        await this._collaborationService.verifyCollaborator(noteId, userId);
+        await this._collaborationsService.verifyCollaborator(noteId, userId);
       } catch {
         throw error;
       }
