@@ -1,0 +1,43 @@
+{
+  "name": "notes-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start-prod": "NODE_ENV=production node ./src/server.js",
+    "start-dev": "nodemon ./src/server.js",
+    "lint": "eslint ./src",
+    "migrate": "node-pg-migrate"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.21.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "@hapi/hapi": "^20.3.0",
+    "@hapi/jwt": "^3.2.0",
+    "amqplib": "^0.10.3",
+    "auto-bind": "^4.0.0",
+    "bcrypt": "^5.1.0",
+    "dotenv": "^16.3.1",
+    "hapi": "^18.1.0",
+    "joi": "^17.9.2",
+    "nanoid": "^3.1.20",
+    "node-pg-migrate": "^6.2.2",
+    "nodemailer": "^6.9.4",
+    "pg": "^8.11.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/WannBae/notes-app-backend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/WannBae/notes-app-backend/issues"
+  },
+  "homepage": "https://github.com/WannBae/notes-app-backend#readme",
+  "description": ""
+}
