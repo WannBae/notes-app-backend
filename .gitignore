@@ -2,5 +2,6 @@ node_modules
 .env
 .prod.env
 dicodingacademydeveloper_credentials.csv
-openmusic-api-webserver.pem
+dicodingacademydeveloper_accessKeys.csv
 src/api/uploads/file
+notes-api-webserver.pem
